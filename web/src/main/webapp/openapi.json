@@ -1,0 +1,40 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "RESTEasy Swagger Example",
+    "description" : "JAX-RS API docs",
+    "termsOfService" : "https://example.com",
+    "contact" : {
+      "email" : "example@example.com"
+    },
+    "license" : {
+      "name" : "Apache 2.0",
+      "url" : "http://www.apache.org/licenses/LICENSE-2.0.html"
+    },
+    "version" : "1.0"
+  },
+  "paths" : {
+    "/greeter/sayHello" : {
+      "get" : {
+        "tags" : [ "dummy" ],
+        "summary" : "get dummy",
+        "description" : "Get Dummy",
+        "operationId" : "sayHello",
+        "requestBody" : {
+          "content" : {
+            "*/*" : {
+              "schema" : {
+                "type" : "string"
+              }
+            }
+          }
+        },
+        "responses" : {
+          "200" : {
+            "description" : "OK"
+          }
+        }
+      }
+    }
+  }
+}
